@@ -126,20 +126,24 @@ console.log("------------------------");
 // 🚧 Break Out Activity 1: Using if...else
 
     // 🚧 "time" will be a random number between 0 and 24
-    // ____ time = Math.ceil(Math.random()*24);
+    // const time = Math.ceil(Math.random()*24);
     // log a message to the console indicating whether "time" is in the AM or PM
 
     // If "time" is less than or equal to 12...
-    // if (❓) {
+    // if (time <= 12) {
 
-        // console.log(`${time} is in the AM.`)
+    //     console.log(`${time} is in the AM.`)
 
     // In all other cases...
     // } else {
 
-        // console.log(`${time} is in the PM.`)
+    //     console.log(`${time} is in the PM.`)
 
     // }
+
+    // time<=12 ? console.log(`${time} is in the AM.`) : console.log(`${time} is in the PM.`)
+
+    console.log(`${time} is in the ${time < 12 ? "AM" : "PM"}`)
 
     // ✨ BONUS: Try refactoring the above expression using a ternary operator.
 
@@ -160,21 +164,20 @@ console.log("------------------------");
     // 3. and then try reassigning otherDate to different values to test your logic
     // to different values to
 
-    // ____ today = new Date("2021-11-22");
-    // ____ yesterday = new Date("2021-11-21");
-    // ____ tomororow = new Date("2021-11-23");
-    // ____ otherDate = yesterday;
+    // const today = new Date("2021-11-22");
+    // const yesterday = new Date("2021-11-21");
+    // const tomorrow = new Date("2021-11-23");
+    // let otherDate = yesterday;
 
 
 
 
     // 🚨 Format your if...else if...else conditional below
     
-        // if (❓) {
-        // ... 
-        // } else if (❓) {
-        // ...
-        // ...
+        // if (otherDate <= yesterday) {
+        //     console.log("This date is in the past")
+        // } else if (otherDate >= tomorrow) {
+        //     console.log("This date is in the future")
         // } else {
-        // ...
-        // }
+        //     console.log("This date is today!")
+        // };
